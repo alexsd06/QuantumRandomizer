@@ -19,7 +19,7 @@ qc.measure([0], [0])
 print(qc)
 input("Press enter to continue...")
 # qc.draw(output='mpl')
-simulator = Aer.get_backend('qasm_simulator')
+#simulator = Aer.get_backend('qasm_simulator')
 sampler = Sampler(backend)
 result = job = sampler.run([qc], shots=1).result()[0].data.c.array[0][0]
 if result == 0:
